@@ -16,7 +16,7 @@ type Props = {
 export function CategorySelect({
   categorySelected,
   setCategory,
-  hasCheckbox = false,
+  hasCheckbox = true,
 }: Props) {
   return (
     <ScrollView
