@@ -1,18 +1,17 @@
-import React from "react";
-import { Image } from "react-native";
+import React from 'react';
+import { Image } from 'react-native';
 
-import { styles } from "./styles";
-
+import { styles } from './styles';
 
 export function GuildIcon() {
-  const uri =
-    "https://2.bp.blogspot.com/-SId4LYenbTY/WHedFKMQOgI/AAAAAAAAQxU/hdgP3iAyMOgcOLDV3DW0DdWIZ1F0Z6GDwCLcB/s1600/discord-linuxbuzz-min.png"; 
+  const uri = 'https://gamerssuffice.com/wp-content/uploads/2019/11/How-to-add-bots-to-discord-500x405.jpg';
+
   return (
     <Image 
-        source={{ uri }}
-        style={styles.image}
-        resizeMode="cover"
+      source={{ uri }}
+      style={styles.image}
+      resizeMode="cover"    
     />
+  )
 
-  );
 }

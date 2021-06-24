@@ -10,31 +10,34 @@ import { Category } from '../Category';
 type Props = {
   categorySelected: string;
   setCategory: (categoryId: string) => void;
-  hasCheckbox?: boolean;
+  hasCheckBox?: boolean;
 }
 
-export function CategorySelect({
-  categorySelected,
+export function CategorySelect({ 
+  categorySelected, 
   setCategory,
-  hasCheckbox = true,
-}: Props) {
-  return (
+  hasCheckBox = false,
+}: Props){
+  
+  return(
     <ScrollView
       horizontal
-      style={styles.container}
-      showsHorizontalScrollIndicator={false}
+      style={styles.container}  
+      showsHorizontalScrollIndicator={false}  
       contentContainerStyle={{ paddingRight: 40 }}
     >
-      {categories.map((category) => (
-        <Category
-          key={category.id}
-          title={category.title}
-          icon={category.icon}
-          checked={category.id === categorySelected}
-          onPress={() => setCategory(category.id)}
-          hasCheckbox={hasCheckbox}
-        />
-      ))}
+      {
+        categories.map(category => (
+          <Category 
+            key={category.id}
+            title={category.title}
+            icon={category.icon}
+            checked={category.id === categorySelected}
+            onPress={() => setCategory(category.id)}
+            hasCheckBox={hasCheckBox}
+          />
+        ))
+      }
     </ScrollView>
   );
 }

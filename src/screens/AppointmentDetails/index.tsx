@@ -24,14 +24,14 @@ export function AppointmentDetails(){
   const members = [
     {
       id: '1',
-      username: 'Anderson',
-      avatar_url: 'https://github.com/andersonfpv.png',
+      username: 'Rodrigo',
+      avatar_url: 'https://github.com/rodrigorgtic.png',
       status: 'online'
     },
     {
       id: '2',
-      username: 'Anderson',
-      avatar_url: 'https://github.com/andersonfpv.png',
+      username: 'Rodrigo',
+      avatar_url: 'https://github.com/rodrigorgtic.png',
       status: 'offline'
     }
   ]
